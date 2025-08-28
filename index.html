@@ -7,53 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <h1>My Responsive Webpage</h1>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Shelton</div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Navigation Section -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Layout (Grid) -->
+  <!-- Main Layout -->
   <main class="container">
-    <!-- Content Area -->
     <section class="content">
-      <h2>Welcome</h2>
+      <h1>Welcome to My Responsive Page</h1>
       <p>
-        This is a responsive webpage built using <strong>Flexbox</strong> and 
-        <strong>CSS Grid</strong> with a dark-themed modern design.
+        This page demonstrates Flexbox, CSS Grid, and responsive design principles. Resize the browser to see the effect.
       </p>
-
-      <!-- Flexbox Cards -->
-      <div class="card-container">
+      <div class="cards">
         <div class="card">Card 1</div>
         <div class="card">Card 2</div>
         <div class="card">Card 3</div>
       </div>
     </section>
-
-    <!-- Sidebar -->
+    
     <aside class="sidebar">
-      <h3>Sidebar</h3>
-      <ul>
-        <li>Latest News</li>
-        <li>Quick Links</li>
-        <li>Resources</li>
-      </ul>
+      <h2>Sidebar</h2>
+      <p>Extra content or links can go here.</p>
     </aside>
   </main>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <p>&copy; 2024 My Responsive Website | Built with Flexbox & Grid</p>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MySite | Designed with Dark, Purple & Cream</p>
   </footer>
+
+  <script>
+    // Toggle navbar on small devices
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
